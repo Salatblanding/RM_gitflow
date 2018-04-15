@@ -9,7 +9,7 @@ RPD_PW=Admin123
 [Git]
 GIT_EXE=?C:\Users\Admin\Git-2.16.1.4-64-bit.exe
 GIT_REPO=C:\Users\Admin\Documents\RM_gitflow
-GIT_RPD=Base.rpd
+GIT_RPD=test1.rpd
 
 GIT_REMOTE=origin
 GIT_DEVELOP=develop
