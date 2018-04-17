@@ -350,6 +350,8 @@ def create_patch(orig_rpd, orig_pass, curr_rpd, curr_pass, patch_file):
 	p = Popen(script, stdout=log, stderr=STDOUT)
 	p.wait()
 
+	print 'Works.subprocess'
+
 	if os.path.exists(patch_file):
 		print '\tPatch created successfully.'
 		delete_file(log)
