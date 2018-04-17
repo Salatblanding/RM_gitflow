@@ -347,11 +347,13 @@ def create_patch(orig_rpd, orig_pass, curr_rpd, curr_pass, patch_file):
 	compare_log = os.path.join(CURRENT_DIR, 'compareRPD.log')
 	log = open(compare_log, 'w')
 	script = [bi_command('comparerpd'), '-C', curr_rpd, '-p', curr_pass, '-G', orig_rpd, '-W', orig_pass, '-D', patch_file]
+
+        print 'before subprocess script'
 	p = Popen(script, stdout=log, stderr=STDOUT)
 	p.wait()
 
-	print 'Works.subprocess'
-
+        print 'after subprocess script'
+        print 'works here. which means subprocess most likely working'
 	if os.path.exists(patch_file):
 		print '\tPatch created successfully.'
 		delete_file(log)
